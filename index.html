@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    
+<!--nav-->
+<section>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Musicas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+            </li>
+        </ul>
+        <li class="nav-item">
+                            <a class="nav-link position-relative" href="carrito.html">
+                                🛒 Carrito
+                                <span id="contadorCarrito"
+                                      class="badge bg-danger position-absolute top-0 start-100 translate-middle">
+                                      0
+                                </span>
+                            </a>
+                        </li>
+        </div>
+    </div>
+    </nav>
+
+</section>
+
+
+<!--hero con bienvenida a la pagina-->
+
+
+<section class="hero d-flex align-items-center text-white" id="hero">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">Tienda Música</h1>
+        <p class="lead">Encuentra los mejores instrumentos para inspirar tu creatividad.</p>
+    </div>
+</section>
+
+
+<!--home y grilla card-->
+<section class="container py-5 pb-4">
+    <div class="row">
+
+ <!-- PRODUCTO 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/1200x/a2/e3/1c/a2e31c0c44f80518ca5d99ac8a8e6cbe.jpg" class="card-img-top" alt="Guitarra">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold">Guitarra Clásica</li>
+                    <li class="list-group-item">Precio: $89.990</li>
+                    <li class="list-group-item">Color: Natural</li>
+                </ul>
+                <div class="card-footer d-flex justify-content-center">
+                    <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito()">Agregar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/1200x/c8/c7/ad/c8c7adb71d84c32b34d8203a97605e43.jpg" class="card-img-top" alt="Piano">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold">Piano Digital</li>
+                    <li class="list-group-item">Precio: $299.990</li>
+                    <li class="list-group-item">88 teclas</li>
+                </ul>
+                <div class="card-footer d-flex justify-content-center">
+                    <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito()">Agregar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/1200x/2e/e6/4e/2ee64eda52c1af305a8fb2e0b9680c21.jpg" class="card-img-top" alt="Violín">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold">Violín Profesional</li>
+                    <li class="list-group-item">Precio: $159.990</li>
+                    <li class="list-group-item">Incluye estuche</li>
+                </ul>
+                <div class="card-footer d-flex justify-content-center">
+                    <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito()">Agregar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/1200x/68/f3/04/68f304a8cb8f91519f80bf523156b88d.jpg" class="card-img-top" alt="Batería">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold">Batería Acústica</li>
+                    <li class="list-group-item">Precio: $499.990</li>
+                    <li class="list-group-item">5 piezas</li>
+                </ul>
+                <div class="card-footer d-flex justify-content-center">
+                    <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito()">Agregar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/736x/40/43/c7/4043c7be6b320ec80f825ee5f49b41c8.jpg" class="card-img-top" alt="Micrófono">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold">Micrófono Profesional</li>
+                    <li class="list-group-item">Precio: $49.990</li>
+                    <li class="list-group-item">Condensador</li>
+                </ul>
+                <div class="card-footer d-flex justify-content-center">
+                    <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito()">Agregar</button>
+                </div>    
+            </div>
+        </div>
+
+        <!-- PRODUCTO 6-->
+
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/1200x/fc/21/64/fc216473a22b97ead19cb97db112c092.jpg" class="card-img-top" alt="cable xlr">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold">Cable XLR</li>
+                    <li class="list-group-item">Precio: $10.990</li>
+                    <li class="list-group-item">5 metros</li>
+                </ul>
+                <div class="card-footer d-flex justify-content-center">
+                    <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito()">Agregar</button>
+                    </div>
+            </div>
+        </div>
+
+
+        <!-- PRODUCTO 7-->
+
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/1200x/8b/fa/c0/8bfac075f04ccbd0556c73f99ed3a557.jpg" class="card-img-top" alt="cable de linea">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold">Cable de linea</li>
+                    <li class="list-group-item">Precio: $14.990</li>
+                    <li class="list-group-item">10 metros</li>
+                </ul>
+                <div class="card-footer d-flex justify-content-center">
+                    <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito()">Agregar</button>
+                </div>    
+            </div>
+        </div>
+
+
+
+        <!-- PRODUCTO 8-->
+
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/1200x/1f/90/7e/1f907e8ad2d3a5bd3805440f832530a2.jpg" class="card-img-top" alt="uñetas">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold">pack de 5 uñetas</li>
+                    <li class="list-group-item">Precio: $4.990</li>
+                    <li class="list-group-item">5 unidades</li>
+                </ul>
+                <div class="card-footer d-flex justify-content-center">
+                    <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito()">Agregar</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PRODUCTO 9-->
+
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/736x/ea/52/b3/ea52b3e5c3ca6f7ef885add2e319fdb5.jpg" class="card-img-top" alt="power mixer">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold">power mixer</li>
+                    <li class="list-group-item">Precio: $300.000</li>
+                    <li class="list-group-item">6000W y 18 canales</li>
+                </ul>
+                <div class="card-footer d-flex justify-content-center">
+                    <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito()">Agregar</button>
+                </div>    
+            </div>
+        </div>
+
+
+
+
+    </div>
+</section>
+
+
+<!--footer-->
+
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <p class="mb-1">© 2025 Tienda de Música. Todos los derechos reservados.</p>
+    <p class="small mb-0">Creado por <strong>Dae</strong>.</p>
+</footer>
+
+</body>
+</html>
