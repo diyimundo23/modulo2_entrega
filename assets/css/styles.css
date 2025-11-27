@@ -1,6 +1,6 @@
 .hero {
   height: 60vh;
-  background-image: url('https://i.pinimg.com/736x/e0/0f/10/e00f1040dd87e642ad9b5a41023ec090.jpg'); /* <-- nota los dos puntos */
+  background-image: url('https://i.pinimg.com/736x/e0/0f/10/e00f1040dd87e642ad9b5a41023ec090.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
